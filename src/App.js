@@ -3,13 +3,16 @@ import './App.css';
 import Employee from './components/Employee'
 
 function App() {
-  return (
-    <div className="App">
-      <Employee name={`Matt`}/>
-      <Employee name={`Nathan`}/>
-      <Employee name={`Jones`}/>
-    </div>
-  );
+    const names = ['Matt', 'Nathan', 'Jones']
+    const listItems = names.map((name) => 
+        <li>{name}</li>
+    )
+
+    return (
+        <div className="App">
+            <ul>{listItems}</ul>
+        </div>
+    );
 }
 
 export default App;
