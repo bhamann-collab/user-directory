@@ -3,7 +3,7 @@ import React from 'react'
 const Employee = (props) => {
     return (
         <div>
-            <h1>{props.name}</h1>
+            <h1><span>{props.name}</span> <span>{props.occupation}</span></h1>
         </div>
     )
 }
