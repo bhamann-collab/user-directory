@@ -62,7 +62,7 @@ function App() {
     }
 
     function descendNames() {
-        employees.sort((a, b) => b.name.localeCompare(a.name))
+        setEmployees([...employees].sort((a, b) => b.name.localeCompare(a.name)))
     }
 
     const listItems = employees.map((employee) => 

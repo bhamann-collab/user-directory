@@ -13,7 +13,7 @@ const Filter = (props) => {
                 <Button variant="primary" onClick={props.ascendNames}>
                     Sort Names Ascending
                 </Button>
-                <Button variant="primary" >
+                <Button variant="primary" onClick={props.decendNames}>
                     Sort Names Decending
                 </Button>
             </Form>
